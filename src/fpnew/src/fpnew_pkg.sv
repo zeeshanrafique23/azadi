@@ -12,7 +12,7 @@
 // Author: Stefan Mach <smach@iis.ee.ethz.ch>
 
 package fpnew_pkg;
-
+/* verilator lint_off LITENDIAN */
   // ---------
   // FP TYPES
   // ---------
@@ -95,7 +95,7 @@ package fpnew_pkg;
         // pragma translate_on
         // just return any integer to avoid any latches
         // hopefully this error is caught by simulation
-        return INT8;
+        return {30'b0,INT8};
       end
     endcase
   endfunction
@@ -488,5 +488,5 @@ package fpnew_pkg;
     end
     return res;
   endfunction
-
+/* verilator lint_on LITENDIAN */
 endpackage

@@ -38,9 +38,7 @@
 //                                                                            //
 ////////////////////////////////////////////////////////////////////////////////
 
-import defs_div_sqrt_mvp::*;
-
-module control_mvp
+module control_mvp import defs_div_sqrt_mvp::*;
 
   (//Input
    input logic                                        Clk_CI,
@@ -170,7 +168,7 @@ module control_mvp
      logic [5:0]                                     State_ctl_S;
      logic [5:0]                                     State_Two_iteration_unit_S;
      logic [5:0]                                     State_Four_iteration_unit_S;
-
+    /* verilator lint_off WIDTH */
     assign State_Two_iteration_unit_S = Precision_ctl_S[C_PC-1:1];  //Two iteration units
     assign State_Four_iteration_unit_S = Precision_ctl_S[C_PC-1:2];  //Four iteration units
      always_comb

@@ -12,9 +12,10 @@
 // Author: Stefan Mach <smach@iis.ee.ethz.ch>
 
 
-//`include "/home/zeeshan/fyp/azadi/src/fpnew/src/common_cells/include/common_cells/registers.svh"
-
-//`include "/home/merl-lab/fyp/azadi/src/fpnew/src/common_cells/include/common_cells/registers.svh"
+// `include "registers.svh"
+/* verilator lint_off INCABSPATH */
+`include "/home/merl-lab/projects/zeeshan/azadi/src/fpnew/src/common_cells/include/common_cells/registers.svh"
+/* verilator lint_on INCABSPATH */
 //`include "/home/merl/github_repos/azadi/src/fpnew/src/common_cells/include/common_cells/registers.svh"
 
 module fpnew_noncomp #(

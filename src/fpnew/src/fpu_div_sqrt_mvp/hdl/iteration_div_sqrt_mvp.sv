@@ -56,6 +56,6 @@ module iteration_div_sqrt_mvp
    assign D_carry_D=D_DI[1] | D_DI[0];
    assign Sqrt_cin_D=Sqrt_enable_SI&&D_carry_D;
    assign Cin_D=Div_enable_SI?1'b0:Sqrt_cin_D;
-   assign {Carry_out_DO,Sum_DO}=A_DI+B_DI+Cin_D;
+   assign {Carry_out_DO,Sum_DO}=A_DI+B_DI+{{58{Cin_D}},Cin_D};
 
 endmodule

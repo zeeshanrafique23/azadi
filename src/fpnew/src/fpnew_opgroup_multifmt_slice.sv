@@ -14,7 +14,7 @@
 
 //`include "/home/zeeshan/fyp/azadi/src/fpnew/src/common_cells/include/common_cells/registers.svh"
 
-//`include "/home/merl-lab/fyp/azadi/src/fpnew/src/common_cells/include/common_cells/registers.svh"
+`include "/home/merl-lab/projects/zeeshan/azadi/src/fpnew/src/common_cells/include/common_cells/registers.svh"
 //`include "/home/merl/github_repos/azadi/src/fpnew/src/common_cells/include/common_cells/registers.svh"
 
 module fpnew_opgroup_multifmt_slice #(
